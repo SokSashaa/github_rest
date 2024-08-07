@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Header from "./components/Header/Header";
+import StartPage from "./pages/StartPage/StartPage";
+import MainPage from "./pages/MainPage/MainPage";
+
+export enum pagesEnum {
+    firstPage,
+    mainPage
+
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [page, setPage] = useState(pagesEnum.firstPage)
+    return (
+        <div className="App">
+            <Header setPage={setPage}/>
+            {page === pagesEnum.firstPage ? <StartPage/> : <MainPage/>}
+
+        </div>
+    );
 }
 
 export default App;
