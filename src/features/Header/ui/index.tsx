@@ -52,7 +52,7 @@ const Header: FC<HeaderProps> = ({ onClickSearch }) => {
     return (
         <div className={css.header}>
             <input
-                placeholder={'Введите поисковой запрос'}
+                placeholder={'Введите поисковой запрос'} // по-хорошему лучше использовать библиотеку по типу i18n для перевода, но это не по ТЗ
                 className={css.search}
                 onChange={(value) => handleChange(value)}
                 onKeyDown={handleClickDown}

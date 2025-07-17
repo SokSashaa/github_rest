@@ -3,7 +3,7 @@ import {GridColDef} from '@mui/x-data-grid';
 export const COLUMNS_TABLE: GridColDef[] = [
     {
         field: 'name',
-        headerName: 'Название',
+        headerName: 'Название', // по-хорошему лучше использовать библиотеку по типу i18n для перевода, но это не по ТЗ
         sortable: false,
         flex: 0.2,
     },
