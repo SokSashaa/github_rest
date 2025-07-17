@@ -1,0 +1,36 @@
+@import "@shared/ui/styles/colors"
+@import "@shared/ui/styles/cssconsts"
+
+.root
+  display: grid
+  grid-template-columns: 2fr 1fr
+  width: 100%
+  height: calc(100vh - $heightHeader)
+
+.rightPart
+  background-color: $gray
+
+  p
+    font-size: 14px
+    line-height: 143%
+    color: $textColor
+
+.leftPart
+  padding: 24px
+  display: flex
+  flex-direction: column
+  gap: 24px
+
+  .tableResult
+    display: flex
+    justify-content: center
+
+  .title
+    font-size: 48px
+    font-weight: 400
+    line-height: 117%
+
+.noActive
+  display: flex
+  align-items: center
+  justify-content: center
