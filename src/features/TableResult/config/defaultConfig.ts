@@ -15,19 +15,19 @@ export const COLUMNS_TABLE: GridColDef[] = [
         flex: 0.2,
     },
     {
-        field: 'forks_count',
+        field: 'forks',
         headerName: 'Число форков',
         resizable: false,
         flex: 0.2,
     },
     {
-        field: 'stargazers_count',
+        field: 'stars',
         headerName: 'Число звёзд',
         resizable: false,
         flex: 0.2,
     },
     {
-        field: 'updated_at',
+        field: 'updated',
         headerName: 'Дата обновления',
         resizable: false,
         flex: 0.2,

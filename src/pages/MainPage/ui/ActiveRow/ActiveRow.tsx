@@ -24,7 +24,7 @@ const ActiveRow: FC<ActiveRowProps> = ({ item }) => {
                 )}
                 <div className={css.starCount}>
                     <StarIcon className={css.star} />
-                    {item.stargazers_count}
+                    {item.stars}
                 </div>
             </div>
             <div>

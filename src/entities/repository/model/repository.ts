@@ -3,10 +3,10 @@
 export type Repository = {
     id:string,
     name:string,
-    forks_count:number,
+    forks:number,
     language:string,
-    stargazers_count:number,
-    updated_at:string,
+    stars:number,
+    updated:string,
     license:string,
     description:string,
     topics: string[]
