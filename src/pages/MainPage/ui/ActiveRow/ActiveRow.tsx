@@ -27,12 +27,11 @@ const ActiveRow: FC<ActiveRowProps> = ({ item }) => {
                     {item.stars}
                 </div>
             </div>
-            <div>
+            <div className={css.tags}>
                 {item.topics?.map((topic) => (
                     <Chip
                         key={topic}
                         label={topic}
-                        className={css.textTag}
                     />
                 ))}
             </div>
